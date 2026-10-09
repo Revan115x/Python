@@ -8,10 +8,12 @@ Dado un entero x , utiliza una guarda en el patrón ( case 10 if x % 2 == 0: ) p
 par, otro patrón para 10 no par y la opción por defecto."""
 
 
-numero = input(print("Numero"))
+numero = int(input("Numero: "))
 
 match numero:
     case 10|20|30:
         print("Matched: "+numero)
+    case 10 if numero % 2 == 0 :
+        print("par")
     case _:
         print("No match found")
