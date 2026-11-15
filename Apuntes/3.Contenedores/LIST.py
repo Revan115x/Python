@@ -23,6 +23,9 @@ print(sum(numeros))
 # COMPROBAR SI EXISTE
 print(20 in numeros)
 
+# COMPROBAR SI EXISTE
+print(20 not in numeros)
+
 # BUSCAR POSICION
 print(numeros.index(30))
 
