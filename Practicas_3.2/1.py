@@ -13,7 +13,7 @@ fiesta. Si en el último descarte, no se llega a 25 personas, irás sacando de
 la lista de “espera” hasta completar el aforo.
 d. Imprime el mensaje: «Los elegidos de la fiesta son: [...]»."""
 
-Lista = []
+Lista = ["MARIA","JUAN","ANA","TERESA","HECTOR","KEVIN","MIGUEL","ZARA","YODA","LUKE","BALDUR"]
 invitados = []
 import random
 import string
@@ -43,3 +43,35 @@ for i in invitados:
         nuevalista.append(nombre)
     else :
         listaEspera.append(nombre)
+
+ListaInvitados = []
+
+while len(nuevalista) > 50:
+
+    # Buscar las letras posteriores a la que ya tenemos
+    letrasPosteriores = string.ascii_uppercase[string.ascii_uppercase.index(letra) + 1:]
+
+    # Si no quedan letras posteriores, terminamos
+    if len(letrasPosteriores) == 0:
+        break
+
+    # Elegir una nueva letra posterior
+    letra = random.choice(letrasPosteriores)
+    print("Nueva letra:", letra)
+
+    # Lista temporal para los que pasan esta ronda
+    nuevaRonda = []
+
+    # Recorrer solamente los invitados que pasaron la ronda anterior
+    for nombre in nuevalista:
+
+        if nombre[0] >= letra:
+            nuevaRonda.append(nombre)
+        else:
+            listaEspera.append(nombre)
+
+    # Actualizar los invitados que siguen participando
+    nuevalista = nuevaRonda
+
+print("------------------------------------------------------------------j")
+print(nuevalista)

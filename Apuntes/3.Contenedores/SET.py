@@ -50,12 +50,15 @@ print("gato" not in animales)
 # UNION
 A = {1, 2, 3}
 B = {3, 4, 5}
-
+print(A.union(B))
 print(A | B)
 
 # INTERSECCION
 print(A & B)
+print(A.intersection(B))
 
 # DIFERENCIA
 print(A - B)
 print(B - A)
+print(A.difference(B))
+print(B.difference(A))
