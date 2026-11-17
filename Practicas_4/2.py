@@ -24,4 +24,23 @@ codigo = {
 '&': '.-...', '(': '-.--.', ')': '-.--.-'
 }
 
+texto = input("DIME EL TEXTO QUE QUIERES PASAR A MORSE : ")
+# PASO EL TEXTO A MAYUSCULAS
+texto = texto.upper()
 
+# RESULTADO PARA MOSTRAR EL TEXTO EN MORSE
+resultado = []
+
+# RECORRO LAS LETRAS DEL TEXTO
+for letra in texto:
+
+    # SI LETRAS ESTAN EN CODIGO
+    if letra in codigo:
+        # AÑADO EL VALOR QUE TIENE EN EL DICCIONARIO EN RESULTADO
+        resultado.append(codigo[letra])
+
+
+# metodo join para mostrarlo sin los [] y devuelve un str
+cadenaMorse= " ".join(resultado)
+
+print(cadenaMorse)
