@@ -5,7 +5,9 @@
 4. Si no existe, muestra "Producto no encontrado".
 5. Recorre el diccionario mostrando cada videojuego y sus unidades.
 6. Muestra únicamente los nombres de los videojuegos.
-7. Muestra únicamente las cantidades."""
+7. Muestra únicamente las cantidades.
+
+GET · IN · KEYS · VALUES · ITEMS"""
 
 inventario = {
     "Minecraft": 10,

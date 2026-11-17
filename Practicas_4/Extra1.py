@@ -5,7 +5,9 @@
 4. Añade una nueva clave "email" con el valor "carlos@gmail.com".
 5. Modifica su edad sumándole 1.
 6. Elimina la clave "activo".
-7. Muestra el diccionario completo."""
+7. Muestra el diccionario completo.
+
+CREAR · CONSULTAR · MODIFICAR · ELIMINAR"""
 
 usuario = {
     "nombre": "Carlos",
