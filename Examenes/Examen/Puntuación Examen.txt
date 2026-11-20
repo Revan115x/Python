@@ -1,0 +1,7 @@
+RA1 - Tipificación de variables ( 2 puntos)
+RA2 Y RA4 - La nota del resto del examen, sin contar los 2 puntos del RA1
+Puntuación del Examen:
+A- 1 punto
+B.1 2,5 puntos
+B.2 3 puntos
+B.3 1,5 puntos
